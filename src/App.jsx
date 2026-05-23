@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import TopBar from './components/TopBar';
 import BottomNav from './components/BottomNav';
 import TodayTab from './components/TodayTab';
@@ -30,7 +30,6 @@ const ContentArea = styled.div`
   padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
 `;
 
-const TABS = ['today', 'feeling', 'summary', 'settings'];
 
 export default function App() {
   const [tab, setTab] = useState('today');
