@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Page, SectionTitle, Card, PrimaryBtn, TextArea, Label, Modal, ModalTitle } from './ui';
+import { Page, SectionTitle, Card, PrimaryBtn, TextArea, Label } from './ui';
 
 const FEELING_OPTIONS = [
   { label: '😊 Felt great',         cat: 'great' },
