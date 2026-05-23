@@ -1,0 +1,58 @@
+/* ===== GRANDMA'S MEDS — Global Styles ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue-50: #E6F1FB;
+  --blue-100: #B5D4F4;
+  --blue-200: #85B7EB;
+  --blue-400: #378ADD;
+  --blue-600: #185FA5;
+  --blue-800: #0C447C;
+  --blue-900: #042C53;
+  --green-50: #EAF3DE;
+  --green-100: #C0DD97;
+  --green-400: #639922;
+  --green-600: #3B6D11;
+  --green-800: #27500A;
+  --amber-50: #FAEEDA;
+  --amber-100: #FAC775;
+  --amber-400: #BA7517;
+  --amber-600: #854F0B;
+  --red-50: #FCEBEB;
+  --red-400: #E24B4A;
+  --red-600: #A32D2D;
+  --gray-50: #F1EFE8;
+  --gray-200: #B4B2A9;
+  --gray-600: #5F5E5A;
+
+  --font: 'Nunito', system-ui, sans-serif;
+  --rad-sm: 8px;
+  --rad: 14px;
+  --rad-lg: 20px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--blue-900);
+  color: #1a1a2e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+button { cursor: pointer; font-family: var(--font); }
+input, textarea, select { font-family: var(--font); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--blue-200); border-radius: 2px; }
+
+/* Tap highlight */
+* { -webkit-tap-highlight-color: transparent; }
