@@ -176,7 +176,6 @@ export default function TodayTab({ meds, todayDoses, markDose, unmarkDose, setti
     const enc = ENCOURAGEMENTS[Math.floor(Math.random() * ENCOURAGEMENTS.length)];
     setEncouragement(enc);
     // Notify family
-    const names = family.map(f => f.name).join(', ');
     sendFamilyNotification(family, `Dorothy has taken her ${videoModal} medications and logged a video! 💙`);
     setTimeout(() => setEncouragement(null), 5000);
   }
